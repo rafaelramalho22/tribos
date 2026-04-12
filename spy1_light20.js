@@ -2172,7 +2172,7 @@ window.twSDK = {
                         <input type="number" id="ra_heavy" value="0" min="0" class="ra-input"/>
                     </div>
                     <div class="ra-mb15">
-                        <label for="ra_axe">Lança:</label>
+                        <label for="ra_axe">Viking:</label>
                         <input type="number" id="ra_axe" value="0" min="0" class="ra-input"/>
                     </div>
                     <div class="ra-mb15">
