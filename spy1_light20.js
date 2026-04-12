@@ -2172,6 +2172,10 @@ window.twSDK = {
                         <input type="number" id="ra_heavy" value="0" min="0" class="ra-input"/>
                     </div>
                     <div class="ra-mb15">
+                        <label for="ra_axe">Lança:</label>
+                        <input type="number" id="ra_axe" value="0" min="0" class="ra-input"/>
+                    </div>
+                    <div class="ra-mb15">
                         <label for="ra_spear">Lança:</label>
                         <input type="number" id="ra_spear" value="0" min="0" class="ra-input"/>
                     </div>
@@ -2372,6 +2376,7 @@ window.twSDK = {
             const light = Math.max(0, parseInt(document.getElementById('ra_light').value) || 0);
             const heavy = Math.max(0, parseInt(document.getElementById('ra_heavy').value) || 0);
             const spear = Math.max(0, parseInt(document.getElementById('ra_spear').value) || 0);
+            const axe = Math.max(0, parseInt(document.getElementById('ra_axe').value) || 0);
             const sword = Math.max(0, parseInt(document.getElementById('ra_sword').value) || 0);
             const villageId = document.getElementById('ra_village_select').value;
             renderTableRows += `
@@ -2394,7 +2399,7 @@ window.twSDK = {
                         <td class="ra-tac">
                             <a href="/game.php?village=${villageId}&screen=place&target=${
                                 barb[0]
-                            }&spy=${spy}&light=${light}&heavy=${heavy}&spear=${spear}&sword=${sword}" target="_blank" rel="noopener noreferrer" class="btn btn-send-attack">
+                            }&spy=${spy}&light=${light}&heavy=${heavy}&spear=${spear}&axe=${axe}&sword=${sword}" target="_blank" rel="noopener noreferrer" class="btn btn-send-attack">
                                 ${twSDK.tt('Attack')}
                             </a>
                         </td>
